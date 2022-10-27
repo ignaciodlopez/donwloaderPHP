@@ -5,7 +5,7 @@
         $file_url = $_POST["url"];
         $file_name = basename($file_url);
         
-        header("Content-Disposition: attachment; filename=$file_name");
+        header("Content-Disposition: attachment; filename=$file_name"); //HTTP Header
 
         readfile($file_url);
     }
